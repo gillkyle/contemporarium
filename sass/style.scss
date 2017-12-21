@@ -1,0 +1,13 @@
+@import "settings";
+@import "mixins/mixins";
+@import "bootstrap";
+@import "global";
+@import "typography";
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+$gray: #aaa;
+$dark-gray: #333;
+$light-gray: #eee;

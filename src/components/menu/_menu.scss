@@ -1,0 +1,19 @@
+@import "../../../sass/style.scss";
+
+.menu {
+  height: inherit !important;
+  padding: 20px 0px !important;
+  background-color: $light-gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
+  z-index: 5;
+  &-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  &-logo {
+    font-family: "Caesar Dressing", cursive;
+    letter-spacing: 2px;
+    font-size: 22px;
+  }
+}
