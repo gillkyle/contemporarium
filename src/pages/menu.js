@@ -8,7 +8,7 @@ import Menu from "../components/menu";
 const IndexPage = props => (
   <main>
     <Menu />
-    <HowTo data={props.data.allDataJson.edges[0].node.howTo} />
+    <HowTo data={props.data.allDataJson.edges[0].node.menu} />
   </main>
 );
 
