@@ -1,36 +1,81 @@
 {
-    "features": [
-        {
-            "title": "Basic configuration and folder structure"
-        },
-        {
-            "title": "Uses postcss and sass with autoprefixer"
-        },
-        {
-            "title": "Uses Bootstrap 4"
-        },
-        {
-            "title": "Leaves the styling to you"
-        },
-        {
-            "title": "Uses data from local json files"
-        },
-        {
-            "title": "Contains Node.js server code for easy, secure, and fast hosting"
-        },
-        {
-            "title": "SVG sprites: Add your icons in `components/icon` as .icon files and use them."
-        }
-    ],
-    "howTo": [
-        {
-            "title": "Prepare a coffee"
-        },
-        {
-            "title": "Run: `npm i` to install the dependencies"
-        },
-        {
-            "title": "Start coding!"
-        }
-    ]
+  "features": [
+    {
+      "title": "Basic configuration and folder structure"
+    },
+    {
+      "title": "Uses postcss and sass with autoprefixer"
+    },
+    {
+      "title": "Uses Bootstrap 4"
+    },
+    {
+      "title": "Leaves the styling to you"
+    },
+    {
+      "title": "Uses data from local json files"
+    },
+    {
+      "title": "Contains Node.js server code for easy, secure, and fast hosting"
+    },
+    {
+      "title":
+        "SVG sprites: Add your icons in `components/icon` as .icon files and use them."
+    }
+  ],
+  "howTo": [
+    {
+      "title": "Prepare a coffee"
+    },
+    {
+      "title": "Run: `npm i` to install the dependencies"
+    },
+    {
+      "title": "Start coding!"
+    }
+  ],
+  "menu": [
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    },
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    },
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    },
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    },
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    },
+    {
+      "title": "Grilled Shrimp",
+      "price": 12.6,
+      "calories": 310,
+      "description":
+        "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
+    }
+  ]
 }
