@@ -3,11 +3,11 @@
 import React from "react";
 import Features from "../components/features";
 import HowTo from "../components/how-to";
-import Menu from "../components/menu";
+import Nav from "../components/nav";
 
 const IndexPage = props => (
   <main>
-    <Menu />
+    <Nav />
     <HowTo data={props.data.allDataJson.edges[0].node.menu} />
   </main>
 );

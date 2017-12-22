@@ -8,6 +8,12 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.link,
+.link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 $gray: #aaa;
 $dark-gray: #333;
 $light-gray: #eee;
