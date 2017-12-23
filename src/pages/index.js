@@ -1,9 +1,8 @@
 /* global graphql */
 
 import React from "react";
-import Browser from "gatsby-browser";
 import Features from "../components/features";
-import HowTo from "../components/how-to";
+import HowTo from "../components/page-blocks/how-to";
 import Nav from "../components/nav";
 
 const IndexPage = props => (

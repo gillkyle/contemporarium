@@ -16,7 +16,7 @@ const Menu = props => (
         <Link scroll to="/" className="link">
           <div className="nav-logo">CONTEMPORARIUM</div>
         </Link>
-        <div>REVIEWS</div>
+        <div>ABOUT</div>
         <div>CONTACT</div>
       </div>
     </div>
