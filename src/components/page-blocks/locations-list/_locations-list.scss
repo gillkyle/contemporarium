@@ -1,0 +1,23 @@
+.location {
+  padding: 90px 0;
+  &-title {
+    font-weight: bold;
+  }
+  &-list-item {
+    border: 1px solid #ccc;
+    margin: 20px 0px;
+    padding: 20px;
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    &-info {
+      font-weight: bold;
+    }
+    &-desc {
+    }
+  }
+}

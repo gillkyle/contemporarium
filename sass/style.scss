@@ -4,6 +4,10 @@
 @import "global";
 @import "typography";
 
+$gray: #aaa;
+$dark-gray: #333;
+$light-gray: #eee;
+
 * {
   font-family: "Ubuntu", sans-serif;
 }
@@ -14,6 +18,6 @@
   color: inherit;
 }
 
-$gray: #aaa;
-$dark-gray: #333;
-$light-gray: #eee;
+.title {
+  font-size: 36px;
+}
