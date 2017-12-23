@@ -16,7 +16,7 @@ const SocialIcons = props => (
         <ul className="social-icons-nav-list">
           <li className="social-icons-nav-list-item">
             <a
-              href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -25,7 +25,7 @@ const SocialIcons = props => (
           </li>
           <li className="social-icons-nav-list-item">
             <a
-              href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
+              href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,7 +34,7 @@ const SocialIcons = props => (
           </li>
           <li className="social-icons-nav-list-item">
             <a
-              href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +43,7 @@ const SocialIcons = props => (
           </li>
           <li className="social-icons-nav-list-item">
             <a
-              href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
+              href="https://www.yelp.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,7 +52,7 @@ const SocialIcons = props => (
           </li>
           <li className="social-icons-nav-list-item">
             <a
-              href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
+              href="mailto:hello@example.com"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -77,5 +77,28 @@
       "description":
         "Explanation text in the form of a paragraph. Maybe between 2-3 sentences. Enough at least to demo some info and have some dummy data. Delicious ingredients to whet the taste buds. "
     }
+  ],
+  "locations": [
+    {
+      "title": "Provo",
+      "address": {
+        "street": "123 State St.",
+        "state-city": "Provo, UT",
+        "zip": 84606
+      },
+      "phone": "(801) 555-0124",
+      "description":
+        "Our first location, still serving fresh meals as it has for the past 15 years."
+    },
+    {
+      "title": "Orem",
+      "address": {
+        "street": "400 S 287 W",
+        "state-city": "Orem, UT",
+        "zip": 84601
+      },
+      "phone": "(801) 555-0122",
+      "description": "Recently opened, our Orem location has more ."
+    }
   ]
 }

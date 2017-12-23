@@ -2,28 +2,28 @@
 
 import React from "react";
 import Features from "../components/features";
-import MenuItems from "../components/page-blocks/menu-items";
+import Locations from "../components/page-blocks/locations-list";
 import Nav from "../components/nav";
 
 const MenuPage = props => (
   <main>
     <Nav />
-    <MenuItems data={props.data.allDataJson.edges[0].node.menu} />
+    <Locations data={props.data.allDataJson.edges[0].node.locations} />
   </main>
 );
 
 export default MenuPage;
 
 export const pageQuery = graphql`
-  query MenuQuery {
+  query LocationsQuery {
     allDataJson {
       edges {
         node {
-          menu {
+          locations {
             title
             description
-            price
-            calories
+            address
+            phone
           }
         }
       }

@@ -8,12 +8,14 @@ const Menu = props => (
     <div className="container">
       <div className="row nav-items">
         <div>
-          <Link to="/menu" className="link">
+          <Link to="/menu#nav" className="link">
             MENU
           </Link>
         </div>
-        <div>LOCATIONS</div>
-        <Link scroll to="/" className="link">
+        <Link scroll to="/locations#nav" className="link">
+          <div>LOCATIONS</div>
+        </Link>
+        <Link scroll to="/#nav" className="link">
           <div className="nav-logo">CONTEMPORARIUM</div>
         </Link>
         <div>ABOUT</div>
