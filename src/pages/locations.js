@@ -1,31 +1,30 @@
 /* global graphql */
 
 import React from "react";
-import Features from "../components/features";
-import Locations from "../components/page-blocks/locations-list";
 import Nav from "../components/nav";
+import LocationsList from "../components/page-blocks/locations-list";
 
-const MenuPage = props => (
+const LocationsPage = props => (
   <main>
     <Nav />
-    <Locations data={props.data.allDataJson.edges[0].node.locations} />
+    <LocationsList data={props.data.dataJson.locations} />
   </main>
 );
 
-export default MenuPage;
+export default LocationsPage;
 
 export const pageQuery = graphql`
   query LocationsQuery {
-    allDataJson {
-      edges {
-        node {
-          locations {
-            title
-            description
-            address
-            phone
-          }
+    dataJson {
+      locations {
+        title
+        description
+        address {
+          street
+          statecity
+          zip
         }
+        phone
       }
     }
   }

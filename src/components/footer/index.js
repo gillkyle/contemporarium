@@ -9,7 +9,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-12">
           <div className="footer-content">
-            <div className="col menu-logo">CONTEMPORARIUM</div>
+            <div className="col nav-logo">CONTEMPORARIUM</div>
             <ContactInfo />
             <SocialIcons />
           </div>

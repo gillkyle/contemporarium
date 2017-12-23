@@ -3,7 +3,11 @@
   &-title {
     font-weight: bold;
   }
+  &-list {
+    display: flex;
+  }
   &-list-item {
+    width: 100%;
     border: 1px solid #ccc;
     margin: 20px 0px;
     padding: 20px;

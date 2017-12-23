@@ -8,7 +8,12 @@ import "../../sass/style.scss";
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Contemporarium" />
+    <Helmet title="Contemporarium">
+      <link
+        href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Ubuntu"
+        rel="stylesheet"
+      />
+    </Helmet>
     <Header />
     {children()}
     <Footer />

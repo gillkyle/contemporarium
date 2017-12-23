@@ -83,7 +83,7 @@
       "title": "Provo",
       "address": {
         "street": "123 State St.",
-        "state-city": "Provo, UT",
+        "statecity": "Provo, UT",
         "zip": 84606
       },
       "phone": "(801) 555-0124",
@@ -94,7 +94,7 @@
       "title": "Orem",
       "address": {
         "street": "400 S 287 W",
-        "state-city": "Orem, UT",
+        "statecity": "Orem, UT",
         "zip": 84601
       },
       "phone": "(801) 555-0122",
