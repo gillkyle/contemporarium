@@ -7,11 +7,17 @@ const Footer = () => (
   <footer id="footer" className="footer">
     <div className="container text-center">
       <div className="row">
-        <div className="col-12">
-          <div className="footer-content">
-            <div className="col nav-logo">CONTEMPORARIUM</div>
-            <ContactInfo />
-            <SocialIcons />
+        <div className="col-md-12">
+          <div className="footer-content row">
+            <div className="col col-md-4 col-sm-12 nav-logo">
+              CONTEMPORARIUM
+            </div>
+            <div className="col col-md-4 col-sm-12 nav-logo">
+              <ContactInfo />
+            </div>
+            <div className="col col-md-4 col-sm-12 nav-logo">
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </div>

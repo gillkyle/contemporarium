@@ -7,7 +7,7 @@ import "./_header.scss";
 const Header = () => (
   <header className="header">
     <div className="container hero">
-      <div className="row">
+      <div className="row flexCenter">
         <SocialIcons />
       </div>
       <div className="row">
@@ -28,7 +28,7 @@ const Header = () => (
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row flexCenter">
         <ContactInfo />
       </div>
     </div>

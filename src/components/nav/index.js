@@ -12,14 +12,26 @@ const Menu = props => (
             MENU
           </Link>
         </div>
-        <Link scroll to="/locations#nav" className="link">
-          <div>LOCATIONS</div>
-        </Link>
-        <Link scroll to="/#nav" className="link">
-          <div className="nav-logo">CONTEMPORARIUM</div>
-        </Link>
-        <div>ABOUT</div>
-        <div>CONTACT</div>
+        <div>
+          <Link to="/locations#nav" className="link">
+            LOCATIONS
+          </Link>
+        </div>
+        <div>
+          <Link to="/#nav" className="link nav-logo">
+            CONTEMPORARIUM
+          </Link>
+        </div>
+        <div>
+          <Link to="/#nav" className="link">
+            ABOUT
+          </Link>
+        </div>
+        <div>
+          <Link to="/#nav" className="link">
+            CONTACT
+          </Link>
+        </div>
       </div>
     </div>
   </section>

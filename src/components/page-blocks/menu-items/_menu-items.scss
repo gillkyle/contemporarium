@@ -1,7 +1,11 @@
 .menu-items {
-  padding: 90px 0;
+  padding: 20px 0;
   &-title {
     font-weight: bold;
+    font-family: "Caesar Dressing", cursive;
+  }
+  &-list {
+    display: flex;
   }
   &-list-item {
     border: 1px solid #ccc;
