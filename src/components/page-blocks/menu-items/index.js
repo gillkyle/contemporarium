@@ -17,7 +17,7 @@ const MenuItems = props => (
       <div className="row">
         {props.data.map((item, i) => (
           <div className="col-lg-4 col-md-6 col-sm-12 menu-items-list" key={i}>
-            <div className="menu-items-list-item card">
+            <div className="menu-items-list-item custom-card">
               <div className="menu-items-list-item-title">
                 {item.title}
                 <span
