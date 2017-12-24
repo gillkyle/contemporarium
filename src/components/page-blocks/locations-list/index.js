@@ -13,7 +13,7 @@ const LocationsList = props => (
       <div className="row">
         {props.data.map((item, i) => (
           <div className="col-6 location-list">
-            <div className="location-list-item" key={i}>
+            <div className="location-list-item card" key={i}>
               <div className="location-list-item-title">{item.title}</div>
               <div className="location-list-item-info">
                 <div>{item.address.street}</div>

@@ -12,10 +12,10 @@ const Footer = () => (
             <div className="col col-md-4 col-sm-12 nav-logo">
               CONTEMPORARIUM
             </div>
-            <div className="col col-md-4 col-sm-12 nav-logo">
+            <div className="col col-md-4 col-sm-12">
               <ContactInfo />
             </div>
-            <div className="col col-md-4 col-sm-12 nav-logo">
+            <div className="col col-md-4 col-sm-12">
               <SocialIcons />
             </div>
           </div>

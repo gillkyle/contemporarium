@@ -6,10 +6,14 @@
 
 $gray: #aaa;
 $dark-gray: #333;
-$light-gray: #eee;
+$light-gray: #ccc;
+$gray-border: #d4dadf;
 
 * {
   font-family: "Ubuntu", sans-serif;
+}
+main {
+  background-color: #f4f6f7b0;
 }
 
 .link,
@@ -20,4 +24,41 @@ $light-gray: #eee;
 
 .title {
   font-size: 36px;
+}
+
+/* double lines next to titles */
+.fancy {
+  line-height: 0.1;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  top: 0;
+  width: 60px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.card {
+  border: 1px solid $gray-border;
+  margin: 20px 0px;
+  padding: 20px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  background-color: #fff;
 }

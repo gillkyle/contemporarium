@@ -21,7 +21,7 @@ const Header = () => (
                 marginBottom: 15
               }}
             />
-            <div>
+            <div className="header-desc">
               Enjoy artesenal foods, always fresh, from local Utah county
               sources
             </div>

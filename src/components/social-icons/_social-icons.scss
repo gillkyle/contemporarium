@@ -6,6 +6,12 @@
     align-items: center;
     justify-content: center;
   }
+  @media screen and (max-width: 768px) {
+    &-content {
+      height: inherit;
+      margin: 20px;
+    }
+  }
   &-nav-list {
     margin: 0;
     padding: 0;
