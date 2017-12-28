@@ -18,6 +18,7 @@ export const pageQuery = graphql`
     dataJson {
       locations {
         title
+        image
         description
         address {
           street
@@ -25,6 +26,7 @@ export const pageQuery = graphql`
           zip
         }
         phone
+        email
       }
     }
   }

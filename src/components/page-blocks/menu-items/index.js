@@ -11,7 +11,7 @@ const MenuItems = props => (
           <h4 className="title fancy">
             <span className="menu-items-title">{props.title}</span>
           </h4>
-          <h5>{props.description}</h5>
+          <h5 style={{marginTop: 30}} >{props.description}</h5>
         </div>
       </div>
       <div className="row">
@@ -20,7 +20,7 @@ const MenuItems = props => (
             <div className="menu-items-list-item custom-card">
               <div className="menu-items-list-item-title">
                 {item.title}
-                <span
+                {item.vegetarian === 'YES' ? (<span
                   style={{
                     float: "right",
                     fontSize: 14,
@@ -29,7 +29,7 @@ const MenuItems = props => (
                   }}
                 >
                   <FaCutlery />
-                </span>
+                </span>): ""}
               </div>
               <div className="menu-items-list-item-info">
                 {item.price} - ({item.calories} cal.)

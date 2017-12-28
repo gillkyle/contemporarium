@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhone, FaEnvelope } from "react-icons/lib/fa";
 
 import "./_locations-list.scss";
 
@@ -11,51 +12,43 @@ const LocationsList = props => (
         </div>
       </div>
       <div className="row">
-        {props.data.map((item, i) => (
-          <div className="col-6 location-list">
-            <div className="location-list-item custom-card" key={i}>
-              <div className="location-list-item-title">{item.title}</div>
-              <div className="location-list-item-info">
+        <div className="card-deck">
+          {props.data.map((item, i) => (
+            <div className="card">
+              <div className="card-body">
+                <h4 className="card-title">{item.title}</h4>
                 <div>{item.address.street}</div>
                 <div>{item.address.statecity}</div>
                 <div>{item.address.zip}</div>
+                <p className="card-text">
+                  <small className="text-muted">{item.description}</small>
+                </p>
+                <button
+                  href={`tel:${item.phone}`}
+                  class="btn btn-outline-primary"
+                >
+                  <FaPhone /> {item.phone}
+                </button>
+                <button
+                  style={{ marginLeft: 10 }}
+                  href={`mailto:${item.email}`}
+                  class="btn btn-outline-secondary"
+                >
+                  <FaEnvelope /> {item.email}
+                </button>
               </div>
-              <div className="location-list-item-desc">{item.description}</div>
+              <img
+                className="card-img-bottom"
+                src={item.image}
+                alt="item image"
+                style={{
+                  height: 300,
+                  background: "transparent no-repeat center",
+                  backgroundSize: "cover"
+                }}
+              />
             </div>
-          </div>
-        ))}
-        <div class="card-deck">
-          <div class="card">
-            <img
-              class="card-img-top"
-              src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1500&q=80"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

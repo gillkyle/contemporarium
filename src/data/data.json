@@ -87,18 +87,25 @@
         "zip": 84606
       },
       "phone": "(801) 555-0124",
+      "email": "hello@contemporarium.com",
+      "image":
+        "https://images.unsplash.com/photo-1429681601148-75510b2cef43?auto=format&fit=crop&w=1350&q=80",
       "description":
         "Our first location, still serving fresh meals as it has for the past 15 years."
     },
     {
       "title": "Orem",
       "address": {
-        "street": "400 S 287 W",
+        "street": "427 Demo Boulevard",
         "statecity": "Orem, UT",
         "zip": 84601
       },
       "phone": "(801) 555-0122",
-      "description": "Recently opened, our Orem location has more ."
+      "email": "hello@contemporarium.com",
+      "image":
+        "https://images.unsplash.com/photo-1471691170738-9c6b554ebec1?auto=format&fit=crop&w=1350&q=80",
+      "description":
+        "Recently opened, our Orem location features a new unique flavor of sparkling lemonade, come in and tell us what you think."
     }
   ]
 }

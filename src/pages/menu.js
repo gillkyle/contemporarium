@@ -5,13 +5,16 @@ import Features from "../components/features";
 import MenuItems from "../components/page-blocks/menu-items";
 import Nav from "../components/nav";
 import GetSheetDone from "get-sheet-done";
+import { FaCutlery } from "react-icons/lib/fa";
 
 class MenuPage extends React.Component {
   constructor() {
     super();
     this.state = {
       entrees: [],
-      drinks: []
+      drinks: [],
+      desserts: [],
+      loading: true
     };
   }
 
@@ -30,6 +33,13 @@ class MenuPage extends React.Component {
       console.log(sheet);
       this.setState({ drinks: sheet.data });
     });
+    GetSheetDone.labeledCols(
+      "1y9YVhJJCYs7NBj2a-aql7JJPFI6mmXW06efDaXBGYkc",
+      3
+    ).then(sheet => {
+      console.log(sheet);
+      this.setState({ desserts: sheet.data, loading: false });
+    });
   }
 
   render() {
@@ -38,8 +48,22 @@ class MenuPage extends React.Component {
         <Nav />
         <div style={{ height: 70 }} />
         {/* <MenuItems data={this.props.data.allDataJson.edges[0].node.menu} /> */}
-        <MenuItems data={this.state.entrees} title="Entrees" />
-        <MenuItems data={this.state.drinks} title="Drinks" />
+        {!this.state.loading ? (
+          <div>
+            <MenuItems
+              data={this.state.entrees}
+              title="Entrees"
+              description="All entrees come with a side of our artisanal sourdough bread"
+            />
+            <div className="col-12 text-center menu-footer">
+              Vegetarian items marked with a <FaCutlery />
+            </div>
+            <MenuItems data={this.state.drinks} title="Drinks" />
+            <MenuItems data={this.state.desserts} title="Desserts" />
+          </div>
+        ) : (
+          <div>loading</div>
+        )}
         <div style={{ height: 70 }} />
       </main>
     );
