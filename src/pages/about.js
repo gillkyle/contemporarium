@@ -1,20 +1,18 @@
-/* global graphql */
-
 import React from "react";
 import Nav from "../components/nav";
-import Home from "../components/page-blocks/home";
+import About from "../components/page-blocks/about";
 
-const IndexPage = props => (
+const AboutPage = props => (
   <main>
     <Nav />
-    <Home />
+    <About />
   </main>
 );
 
-export default IndexPage;
+export default AboutPage;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query AboutQuery {
     dataJson {
       companyInfo {
         name

@@ -24,19 +24,19 @@ const LocationsList = props => (
                 <p className="card-text">
                   <small className="text-muted">{item.description}</small>
                 </p>
-                <button
-                  href={`tel:${item.phone}`}
+                <a
+                  href={`tel:${item.phone.replace(/\D/g, "")}`}
                   class="btn btn-outline-primary"
                 >
                   <FaPhone /> {item.phone}
-                </button>
-                <button
+                </a>
+                <a
                   style={{ marginLeft: 10 }}
                   href={`mailto:${item.email}`}
                   class="btn btn-outline-secondary"
                 >
                   <FaEnvelope /> {item.email}
-                </button>
+                </a>
               </div>
               <img
                 className="card-img-bottom"

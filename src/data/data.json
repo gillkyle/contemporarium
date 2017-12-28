@@ -107,5 +107,9 @@
       "description":
         "Recently opened, our Orem location features a new unique flavor of sparkling lemonade, come in and tell us what you think."
     }
-  ]
+  ],
+  "companyInfo": {
+    "name": "Contemporarium",
+    "slogan": "Health-minded contemporary dining"
+  }
 }
