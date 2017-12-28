@@ -6,6 +6,7 @@ import MenuItems from "../components/page-blocks/menu-items";
 import Nav from "../components/nav";
 import GetSheetDone from "get-sheet-done";
 import { FaCutlery } from "react-icons/lib/fa";
+import Spinner from "react-spinkit";
 
 class MenuPage extends React.Component {
   constructor() {
@@ -62,7 +63,9 @@ class MenuPage extends React.Component {
             <MenuItems data={this.state.desserts} title="Desserts" />
           </div>
         ) : (
-          <div>loading</div>
+          <div className="loading">
+            <Spinner fadeIn="none" name="ball-scale-ripple" />
+          </div>
         )}
         <div style={{ height: 70 }} />
       </main>

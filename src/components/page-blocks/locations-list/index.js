@@ -18,8 +18,9 @@ const LocationsList = props => (
               <div className="card-body">
                 <h4 className="card-title">{item.title}</h4>
                 <div>{item.address.street}</div>
-                <div>{item.address.statecity}</div>
-                <div>{item.address.zip}</div>
+                <div>
+                  {item.address.statecity} {item.address.zip}
+                </div>
                 <p className="card-text">
                   <small className="text-muted">{item.description}</small>
                 </p>

@@ -16,6 +16,10 @@ $dark-green: rgba(23, 48, 5, 1);
 main {
   background-color: #f4f6f7b0;
 }
+.btn,
+a {
+  cursor: pointer !important;
+}
 
 .link {
   color: inherit;
@@ -28,6 +32,14 @@ main {
 
 .title {
   font-size: 36px;
+}
+
+.loading {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: top;
+  height: 750px;
 }
 
 /* double lines next to titles */
