@@ -22,7 +22,7 @@ const Header = () => (
               }}
             />
             <div className="header-desc">
-              Enjoy artesenal foods, always fresh, from local Utah county
+              Enjoy artisanal foods, always fresh, from local Utah county
               sources
             </div>
           </div>

@@ -7,16 +7,13 @@ const Home = props => (
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-sm-12 side-img">
-          <img
-            alt="home image"
-            style={{
-              width: "100%",
-              height: "100%",
-              background: "transparent no-repeat center",
-              backgroundSize: "cover"
-            }}
-            src="https://images.unsplash.com/photo-1501199532894-9449c0a85a77?auto=format&fit=crop&w=634&q=80"
-          />
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://images.unsplash.com/photo-1501199532894-9449c0a85a77?auto=format&fit=crop&w=634&q=80"
+              alt="Card image"
+            />
+          </div>
         </div>
         <div className="col-md-6 col-sm-12">
           <h4 className="title">
