@@ -26,12 +26,11 @@ const LocationsList = props => (
                 </p>
                 <a
                   href={`tel:${item.phone.replace(/\D/g, "")}`}
-                  class="btn btn-outline-primary"
+                  class="btn btn-outline-primary card-btn"
                 >
                   <FaPhone /> {item.phone}
                 </a>
                 <a
-                  style={{ marginLeft: 10 }}
                   href={`mailto:${item.email}`}
                   class="btn btn-outline-secondary"
                 >

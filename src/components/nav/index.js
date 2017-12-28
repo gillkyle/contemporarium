@@ -23,12 +23,12 @@ const Menu = props => (
           </Link>
         </div>
         <div>
-          <Link to="/#nav" className="link">
+          <Link to="/about#nav" className="link">
             ABOUT
           </Link>
         </div>
         <div>
-          <Link to="/#nav" className="link">
+          <Link to="/contact#nav" className="link">
             CONTACT
           </Link>
         </div>
