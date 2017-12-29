@@ -9,6 +9,7 @@ $dark-gray: #333;
 $light-gray: #ccc;
 $gray-border: #d4dadf;
 $dark-green: rgba(23, 48, 5, 1);
+$light-green: #478e0f;
 
 * {
   font-family: "Ubuntu", sans-serif;
@@ -22,7 +23,7 @@ a {
 }
 
 .link {
-  color: inherit;
+  color: $light-green;
 }
 .link:hover {
   color: $dark-green;
@@ -31,8 +32,12 @@ a {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 26px;
   margin: 0 0 20px 0;
+}
+
+section.page-content {
+  padding: 40px 0;
 }
 
 .loading {
@@ -77,6 +82,20 @@ a {
   margin: 20px 0px;
   padding: 20px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+  transition: linear 0.3s all;
   border-radius: 4px;
   background-color: #fff;
+}
+.custom-card:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  transition: linear 0.3s all;
+}
+
+.card {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+  transition: linear 0.3s all;
+}
+.card:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  transition: linear 0.3s all;
 }
