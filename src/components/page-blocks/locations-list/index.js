@@ -4,13 +4,8 @@ import { FaPhone, FaEnvelope } from "react-icons/lib/fa";
 import "./_locations-list.scss";
 
 const LocationsList = props => (
-  <section className="location" id="location">
+  <section className="location page-content" id="location">
     <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h4 className="title">Locations</h4>
-        </div>
-      </div>
       <div className="row">
         <div className="card-deck">
           {props.data.map((item, i) => (

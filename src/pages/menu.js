@@ -2,6 +2,7 @@
 
 import React from "react";
 import Features from "../components/features";
+import Breadcrumb from "../components/breadcrumb";
 import MenuItems from "../components/page-blocks/menu-items";
 import Nav from "../components/nav";
 import GetSheetDone from "get-sheet-done";
@@ -47,7 +48,7 @@ class MenuPage extends React.Component {
     return (
       <main>
         <Nav />
-        <div style={{ height: 70 }} />
+        <Breadcrumb title="Menu" />
         {/* <MenuItems data={this.props.data.allDataJson.edges[0].node.menu} /> */}
         {!this.state.loading ? (
           <div>

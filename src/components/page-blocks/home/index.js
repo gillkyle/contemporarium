@@ -3,7 +3,7 @@ import React from "react";
 import "./_home.scss";
 
 const Home = props => (
-  <section className="home" id="home">
+  <section className="home page-content" id="home">
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-sm-12 side-img">

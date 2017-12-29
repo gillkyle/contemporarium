@@ -3,7 +3,7 @@ import React from "react";
 import "./_contact.scss";
 
 const Contact = props => (
-  <section className="contact" id="contact">
+  <section className="contact page-content" id="contact">
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-sm-12">

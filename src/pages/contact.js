@@ -1,10 +1,12 @@
 import React from "react";
 import Nav from "../components/nav";
+import Breadcrumb from "../components/breadcrumb";
 import Contact from "../components/page-blocks/contact";
 
 const ContactPage = props => (
   <main>
     <Nav />
+    <Breadcrumb title="Contact" />
     <Contact />
   </main>
 );

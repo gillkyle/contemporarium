@@ -2,11 +2,13 @@
 
 import React from "react";
 import Nav from "../components/nav";
+import Breadcrumb from "../components/breadcrumb";
 import Home from "../components/page-blocks/home";
 
 const IndexPage = props => (
   <main>
     <Nav />
+    <Breadcrumb />
     <Home />
   </main>
 );

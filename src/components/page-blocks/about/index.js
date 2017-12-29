@@ -1,15 +1,13 @@
 import React from "react";
+import Link from "gatsby-link";
+import { FaChevronRight } from "react-icons/lib/fa";
+import Breadcrumb from "../../breadcrumb";
 
 import "./_about.scss";
 
 const About = props => (
-  <section className="about" id="about">
+  <section className="about page-content" id="about">
     <div className="container">
-      <div className="row">
-        <div className="col-12 text-center">
-          <h4 className="title">About Us</h4>
-        </div>
-      </div>
       <div className="row">
         <div className="col-md-6 col-sm-12 side-img">
           <div class="card">
@@ -21,9 +19,7 @@ const About = props => (
           </div>
         </div>
         <div className="col-md-6 col-sm-12">
-          <h4 className="title">
-            A health-minded contemporary dining experience unique to Utah county
-          </h4>
+          <h4 className="title">Expert chefs for stunning dishes</h4>
           <div className="home-info">
             Contemporarium is a locally owned, locally sourced restaurant.
           </div>
