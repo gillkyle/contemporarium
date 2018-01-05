@@ -52,6 +52,19 @@ class MenuPage extends React.Component {
         {/* <MenuItems data={this.props.data.allDataJson.edges[0].node.menu} /> */}
         {!this.state.loading ? (
           <div>
+            <div
+              className="col-12 text-center menu-footer"
+              style={{ margin: "20 0" }}
+            >
+              All menu items are pulled in from a Google Sheet automatically
+              that you can see{" "}
+              <a
+                target="_blank"
+                href="https://docs.google.com/spreadsheets/d/1y9YVhJJCYs7NBj2a-aql7JJPFI6mmXW06efDaXBGYkc/edit?usp=sharing"
+              >
+                here
+              </a>
+            </div>
             <MenuItems
               data={this.state.entrees}
               title="Entrees"
