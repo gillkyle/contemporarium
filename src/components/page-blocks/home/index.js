@@ -1,5 +1,5 @@
 import React from "react";
-
+import Img from "gatsby-image";
 import "./_home.scss";
 import { loaded } from "../../../scripts/form-submission-handler-email-list";
 
@@ -20,6 +20,7 @@ class Home extends React.Component {
                   src="https://images.unsplash.com/photo-1501199532894-9449c0a85a77?auto=format&fit=crop&w=634&q=80"
                   alt="Card image"
                 />
+                <Img sizes={this.props.data.lemonade.sizes} />
               </div>
             </div>
             <div className="col-md-6 col-sm-12">
@@ -94,3 +95,13 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+export const query = graphql`
+  query GatsbyImageQuery {
+    lemonade: img(id: { regex: "/lemonade.jpg/" }) {
+      sizes(maxWidth: 1000) {
+        ...GatsbyImageSharpSizes_tracedSVG
+      }
+    }
+  }
+`;

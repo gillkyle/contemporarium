@@ -1,9 +1,9 @@
-const pixrem = require('pixrem');
-const autoprefixer = require('autoprefixer');
+const pixrem = require("pixrem");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Default Starter`
   },
   plugins: [
     `gatsby-plugin-react-next`,
@@ -15,7 +15,7 @@ module.exports = {
         postCssPlugins: [
           pixrem(),
           autoprefixer({
-            browsers: ['last 2 versions']
+            browsers: ["last 2 versions"]
           })
         ],
         precision: 8
@@ -25,9 +25,16 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/src/data/`,
-      },
+        path: `${__dirname}/src/data/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
+      }
     },
     `gatsby-transformer-json`
-  ],
-}
+  ]
+};

@@ -111,5 +111,11 @@
   "companyInfo": {
     "name": "Contemporarium",
     "slogan": "Health-minded contemporary dining"
-  }
+  },
+  "images": [
+    {
+      "title": "lemonade",
+      "filepath": "../img/lemonade.jpg"
+    }
+  ]
 }

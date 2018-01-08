@@ -3174,6 +3174,10 @@ fbjs@^0.8.14, fbjs@^0.8.16, fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
+fetch-jsonp@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/fetch-jsonp/-/fetch-jsonp-1.1.1.tgz#b7b9fd7d3a4f74d38389f5ea2f2d0f46c34510e4"
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -3704,6 +3708,12 @@ get-caller-file@^1.0.1:
 get-params@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/get-params/-/get-params-0.1.2.tgz#bae0dfaba588a0c60d7834c0d8dc2ff60eeef2fe"
+
+get-sheet-done@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/get-sheet-done/-/get-sheet-done-0.1.4.tgz#559c6981b9972dcb203a37b0a191d9db91f2b7d9"
+  dependencies:
+    fetch-jsonp "1.1.1"
 
 get-stdin@^4.0.1:
   version "4.0.1"

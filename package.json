@@ -20,6 +20,7 @@
     "compression": "^1.7.1",
     "debug": "^3.1.0",
     "express": "^4.16.2",
+    "gatsby-image": "^1.0.31",
     "get-sheet-done": "^0.1.4",
     "helmet": "^3.8.2",
     "react-icons": "^2.2.7",
