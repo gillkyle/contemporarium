@@ -1,5 +1,5 @@
 import React from "react";
-
+import Img from "gatsby-image";
 import "./_home.scss";
 import { loaded } from "../../../scripts/form-submission-handler-email-list";
 
