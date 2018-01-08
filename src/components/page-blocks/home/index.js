@@ -73,6 +73,18 @@ class Home extends React.Component {
                   </h4>
                 </div>
               </div>
+              <div
+                className="col-12 text-center menu-footer"
+                style={{ margin: "20 0" }}
+              >
+                All subscribers are listed in a Google sheet{" "}
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/spreadsheets/d/1a3uMDGIvdYdKhFb-sHVevGrHa8KMzkZFpz4-hd3AeBA/edit?usp=sharing"
+                >
+                  here
+                </a>
+              </div>
             </div>
           </div>
         </div>
