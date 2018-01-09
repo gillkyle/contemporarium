@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import { FaChevronRight } from "react-icons/lib/fa";
 import Breadcrumb from "../../breadcrumb";
 
@@ -11,10 +12,11 @@ const About = props => (
       <div className="row">
         <div className="col-md-6 col-sm-12 side-img">
           <div class="card">
-            <img
-              class="card-img"
-              src="https://images.unsplash.com/photo-1502364271109-0a9a75a2a9df?auto=format&fit=crop&w=1350&q=80"
-              alt="Card image"
+            <Img
+              title="card image"
+              alt="Chef preparing food"
+              className="card-img"
+              sizes={props.images.sizes}
             />
           </div>
         </div>

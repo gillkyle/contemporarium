@@ -6,22 +6,36 @@ import Footer from "../components/footer";
 
 import "../../sass/style.scss";
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Contemporarium">
-      <link
-        href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Ubuntu"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <Header />
-    {children()}
-    <Footer />
-  </div>
-);
+class TemplateWrapper extends React.Component {
+  render() {
+    return (
+      <div>
+        <Helmet title="Contemporarium">
+          <link
+            href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Ubuntu"
+            rel="stylesheet"
+          />
+        </Helmet>
+        <Header test="test" headerImage={this.props.data.imageSharp} />
+        {this.props.children()}
+        <Footer />
+      </div>
+    );
+  }
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
 };
 
 export default TemplateWrapper;
+
+export const pageQuery = graphql`
+  query HeaderImageQuery {
+    imageSharp(id: { regex: "/header/" }) {
+      sizes(maxWidth: 10000) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`;

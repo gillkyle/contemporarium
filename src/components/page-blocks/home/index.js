@@ -1,9 +1,15 @@
+/* global graphql */
+
 import React from "react";
 import Img from "gatsby-image";
 import "./_home.scss";
 import { loaded } from "../../../scripts/form-submission-handler-email-list";
 
 class Home extends React.Component {
+  constructor() {
+    super();
+  }
+
   componentDidMount() {
     loaded();
   }
@@ -15,10 +21,10 @@ class Home extends React.Component {
           <div className="row">
             <div className="col-md-6 col-sm-12 side-img">
               <div class="card">
-                <img
-                  class="card-img"
-                  src="https://images.unsplash.com/photo-1501199532894-9449c0a85a77?auto=format&fit=crop&w=634&q=80"
+                <Img
                   alt="Card image"
+                  className="card-img"
+                  sizes={this.props.images.sizes}
                 />
               </div>
             </div>
@@ -94,3 +100,13 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+// export const pageQuery = graphql`
+//   query homeQueryImage {
+//     imageSharp(id: { regex: "/lemonade/" }) {
+//       sizes(maxWidth: 630) {
+//         ...GatsbyImageSharpSizes
+//       }
+//     }
+//   }
+// `;

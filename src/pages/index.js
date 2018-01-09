@@ -9,7 +9,7 @@ const IndexPage = props => (
   <main>
     <Nav />
     <Breadcrumb />
-    <Home />
+    <Home images={props.data.imageSharp} />
   </main>
 );
 
@@ -21,6 +21,11 @@ export const pageQuery = graphql`
       companyInfo {
         name
         slogan
+      }
+    }
+    imageSharp(id: { regex: "/lemonade/" }) {
+      sizes(maxWidth: 630) {
+        ...GatsbyImageSharpSizes_tracedSVG
       }
     }
   }

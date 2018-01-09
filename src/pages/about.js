@@ -1,3 +1,5 @@
+/* global graphql */
+
 import React from "react";
 import Nav from "../components/nav";
 import Breadcrumb from "../components/breadcrumb";
@@ -7,7 +9,7 @@ const AboutPage = props => (
   <main>
     <Nav />
     <Breadcrumb title="About" />
-    <About />
+    <About test="test" images={props.data.imageSharp} />
   </main>
 );
 
@@ -19,6 +21,11 @@ export const pageQuery = graphql`
       companyInfo {
         name
         slogan
+      }
+    }
+    imageSharp(id: { regex: "/chef/" }) {
+      sizes(maxWidth: 630) {
+        ...GatsbyImageSharpSizes_tracedSVG
       }
     }
   }
