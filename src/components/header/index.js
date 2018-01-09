@@ -47,7 +47,7 @@ const Header = props => (
       <div className="row">
         <div className="col-12">
           <div className="header-content">
-            <div className="header-logo">CONTEMPORARIUM</div>
+            <div className="header-logo">Contemporarium</div>
             <div
               style={{
                 borderTop: "1px solid #fff",
