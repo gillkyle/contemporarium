@@ -1,7 +1,7 @@
-import React from "react";
-import SocialIcons from "../social-icons";
-import ContactInfo from "../contact-info";
-import "./_footer.scss";
+import React from 'react';
+import SocialIcons from '../social-icons';
+import ContactInfo from '../contact-info';
+import './_footer.scss';
 
 const Footer = () => (
   <footer id="footer" className="footer">
@@ -10,13 +10,11 @@ const Footer = () => (
         <div className="col-md-12">
           <div className="footer-content row">
             <div className="col col-md-4 col-sm-12 nav-logo">
-              CONTEMPORARIUM
+              IMAGE STRATEGIES
             </div>
+            <div className="col col-md-4 col-sm-12" />
             <div className="col col-md-4 col-sm-12">
               <ContactInfo />
-            </div>
-            <div className="col col-md-4 col-sm-12">
-              <SocialIcons />
             </div>
           </div>
         </div>

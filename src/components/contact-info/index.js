@@ -5,9 +5,8 @@ import "./_contact-info.scss";
 
 const ContactInfo = props => (
   <div className="contact-content">
-    <div>(801) 555-0123</div>
-    <div>hello@contemporarium.com</div>
-    <div>11a - 9p | Mon - Sat</div>
+    <div>IS Group 12 - 1</div>
+    <div>Kyle Gill, Mckay Palmer, Matthew Hamilton, James Summers</div>
   </div>
 );
 
