@@ -8,7 +8,6 @@ import About from "../components/page-blocks/about";
 const AboutPage = props => (
   <main>
     <Nav />
-    <Breadcrumb title="About" />
     <About test="test" images={props.data.imageSharp} />
   </main>
 );
