@@ -9,6 +9,12 @@ class Contact extends React.Component {
   }
 
   componentDidMount() {
+    // const script = document.createElement("script");
+    // script.src =
+    //   "https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js";
+    // script.setAttribute("data-cfasync", false);
+    // script.setAttribute("type", "text/javascript");
+    // document.body.appendChild(script);
     loaded();
   }
 
@@ -18,6 +24,41 @@ class Contact extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-12">
+              {/* <form>
+            <div className="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" className="form-text text-muted">
+                We'll never share your email with anyone else.
+              </small>
+            </div>
+            <div className="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <div className="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea
+                className="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form> */}
               <div className="custom-card" style={{ marginTop: 0 }}>
                 <form
                   id="gform"
