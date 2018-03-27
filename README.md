@@ -1,4 +1,5 @@
 # Gatsby React Boilerplate
+Contemporarium, demo static restaurant site
 
 ### Requirements
 
