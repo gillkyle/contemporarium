@@ -8,28 +8,28 @@ const Menu = props => (
     <div className="container">
       <div className="row nav-items">
         <div>
-          <Link to="/history#nav" className="link">
-            HISTORY
+          <Link to="/menu#nav" className="link">
+            MENU
           </Link>
         </div>
         <div>
-          <Link to="/overview#nav" className="link">
-            OVERVIEW
+          <Link to="/locations#nav" className="link">
+            LOCATIONS
           </Link>
         </div>
         <div>
           <Link to="/#nav" className="link nav-logo">
-            HOME
+            CONTEMPORARIUM
           </Link>
         </div>
         <div>
-          <Link to="/demo#nav" className="link">
-            DEMO
+          <Link to="/about#nav" className="link">
+            ABOUT
           </Link>
         </div>
         <div>
-          <Link to="/future#nav" className="link">
-            FUTURE
+          <Link to="/contact#nav" className="link">
+            CONTACT
           </Link>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Home from "../components/page-blocks/home";
 const IndexPage = props => (
   <main>
     <Nav />
+    <Breadcrumb />
     <Home images={props.data.imageSharp} />
   </main>
 );

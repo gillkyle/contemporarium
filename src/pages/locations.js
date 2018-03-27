@@ -1,13 +1,14 @@
 /* global graphql */
 
-import React from 'react';
-import Nav from '../components/nav';
-import Breadcrumb from '../components/breadcrumb';
-import LocationsList from '../components/page-blocks/locations-list';
+import React from "react";
+import Nav from "../components/nav";
+import Breadcrumb from "../components/breadcrumb";
+import LocationsList from "../components/page-blocks/locations-list";
 
 const LocationsPage = props => (
   <main>
     <Nav />
+    <Breadcrumb title="Locations" />
     <LocationsList data={props.data.dataJson.locations} />
   </main>
 );
